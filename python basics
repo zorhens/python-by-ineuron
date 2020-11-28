@@ -1,0 +1,185 @@
+Python Basics
+In [1]:
+1+2
+Out[1]:
+3
+In [2]:
+4%2
+Out[2]:
+0
+In [3]:
+4/2
+Out[3]:
+2.0
+In [4]:
+5//2
+Out[4]:
+2
+In [5]:
+5/2
+Out[5]:
+2.5
+In [7]:
+#BODMAS--Bracket,Off,Division,Multiplication,Substracvtion
+5+3*2
+Out[7]:
+11
+In [8]:
+(5+3)*2
+Out[8]:
+16
+In [15]:
+a=10
+b=20
+c=a+b
+In [17]:
+type(c)
+Out[17]:
+int
+In [13]:
+type('krish')
+Out[13]:
+str
+In [26]:
+##Boolean operation
+True or True
+Out[26]:
+True
+In [27]:
+True | False
+Out[27]:
+True
+In [34]:
+a=10
+b=20
+a+b>30 or a-b<10
+Out[34]:
+True
+In [1]:
+str
+Out[1]:
+str
+In [2]:
+str(1)
+Out[2]:
+'1'
+In [3]:
+### Strings
+### NEver use Reserve keywords. otherwise u will get error
+str1="Krish is good boy"
+In [4]:
+str1
+Out[4]:
+'Krish is good boy'
+In [6]:
+a=20
+a
+Out[6]:
+20
+In [7]:
+print(a)
+20
+In [8]:
+str1="A good boy"
+str2="A bad boy"
+In [10]:
+print(str1)
+print(str2)
+A good boy
+A bad boy
+In [12]:
+str1+" "+str2
+Out[12]:
+'A good boy A bad boy'
+In [14]:
+name=input("Enter your Name?")
+print(name)
+Enter your Name?1
+1
+In [18]:
+### Add 2 numbers
+a=float(input("Enter number 1?"))
+b=float(input("Enter number 2?"))
+c=a+b
+print("The output is",c)
+Enter number 1?23
+Enter number 2?34
+The output is 57.0
+In [23]:
+### string Formatting
+first_name=input("What is you first name?")
+last_name=input("What is your last name")
+print("My first name is {firstname} and last name is {lastname}".format(lastname=last_name,
+                                                                        firstname=first_name))
+What is you first name?Krish
+What is your last nameNAik
+My first name is Krish and last name is NAik
+Variable Dynamic Typing
+In [25]:
+a=10.0
+type(a)
+Out[25]:
+float
+In [26]:
+a="Krish"
+type(a)
+Out[26]:
+str
+In [31]:
+## Strong Typing
+1 + int("2")
+Out[31]:
+3
+In [4]:
+#### Conditional statements
+## if and elif
+ a=int(input("Enter the number1?"))
+b=int(input("Enter the number2?"))
+c=a-b
+print("The output is",c)
+if c<0:
+    print("The number is negative")
+elif c>40:
+    print("The difference is huge")
+else:
+    print("The number is positive")
+  File "<ipython-input-4-7f4743fcbb8b>", line 3
+    a=int(input("Enter the number1?"))
+    ^
+IndentationError: unexpected indent
+Data Structures
+list
+tuple
+string
+Dictionary
+Sets
+In [6]:
+lst=[1,2,3,"Krish","Naik"]
+In [10]:
+type(lst)
+Out[10]:
+list
+In [14]:
+lst.append("Ineuron")
+In [18]:
+lst[2]="Data Science"
+print(lst[2])
+Data Science
+In [19]:
+lst.append("Krish")
+lst.append("Krish")
+lst
+Out[19]:
+[1, 2, 'Data Science', 'Krish', 'Naik', 'Ineuron', 'Krish', 'Krish']
+In [22]:
+lst.count(3)
+Out[22]:
+0
+In [28]:
+# Indexing
+##immutable
+str1="Krish"
+str1="NAik"
+str1
+Out[28]:
+'NAik'
